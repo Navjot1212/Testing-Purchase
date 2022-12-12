@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-12T12:59:17 EST" name="Default suite" finished-at="2022-12-12T12:59:41 EST" duration-ms="23419">
+    <groups>
+    </groups>
+    <test started-at="2022-12-12T12:59:17 EST" name="Default test" finished-at="2022-12-12T12:59:41 EST" duration-ms="23419">
+      <class name="com.NavjotSingh.TestingPurchase.TestingLogInFunctionality">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:17 EST" name="setUp" finished-at="2022-12-12T12:59:23 EST" duration-ms="5924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validatingLoginFunctionality()[pri:1, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:23 EST" name="validatingLoginFunctionality" finished-at="2022-12-12T12:59:24 EST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingLoginFunctionality -->
+        <test-method signature="validatingPhonesAndPdaPage()[pri:2, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:24 EST" name="validatingPhonesAndPdaPage" finished-at="2022-12-12T12:59:25 EST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingPhonesAndPdaPage -->
+        <test-method signature="validatingHTCPage()[pri:3, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:25 EST" name="validatingHTCPage" finished-at="2022-12-12T12:59:26 EST" duration-ms="1226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingHTCPage -->
+        <test-method signature="validatingProductAddedToCart()[pri:4, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:26 EST" name="validatingProductAddedToCart" finished-at="2022-12-12T12:59:31 EST" duration-ms="5058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingProductAddedToCart -->
+        <test-method signature="validatingCheckoutPage()[pri:5, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:31 EST" name="validatingCheckoutPage" finished-at="2022-12-12T12:59:32 EST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingCheckoutPage -->
+        <test-method signature="validatingBillingDetails()[pri:6, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:32 EST" name="validatingBillingDetails" finished-at="2022-12-12T12:59:32 EST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingBillingDetails -->
+        <test-method signature="validatingDeliveryDetails()[pri:7, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:32 EST" name="validatingDeliveryDetails" finished-at="2022-12-12T12:59:33 EST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingDeliveryDetails -->
+        <test-method signature="validatingDeliveryMethod()[pri:8, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:33 EST" name="validatingDeliveryMethod" finished-at="2022-12-12T12:59:33 EST" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingDeliveryMethod -->
+        <test-method signature="validatingPaymentMethod()[pri:9, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:33 EST" name="validatingPaymentMethod" finished-at="2022-12-12T12:59:37 EST" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingPaymentMethod -->
+        <test-method signature="validatingConfirmOrder()[pri:10, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:37 EST" name="validatingConfirmOrder" finished-at="2022-12-12T12:59:40 EST" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingConfirmOrder -->
+        <test-method signature="validatingOrderPlaced()[pri:11, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:40 EST" name="validatingOrderPlaced" finished-at="2022-12-12T12:59:40 EST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingOrderPlaced -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:40 EST" name="tearDown" finished-at="2022-12-12T12:59:41 EST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.NavjotSingh.TestingPurchase.TestingLogInFunctionality -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,65 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="6" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-12T12:59:17 EST" name="Default suite" finished-at="2022-12-12T12:59:41 EST" duration-ms="23419">
+  <suite started-at="2022-12-12T13:31:32 EST" name="Default suite" finished-at="2022-12-12T13:32:19 EST" duration-ms="46825">
     <groups>
     </groups>
-    <test started-at="2022-12-12T12:59:17 EST" name="Default test" finished-at="2022-12-12T12:59:41 EST" duration-ms="23419">
-      <class name="com.NavjotSingh.TestingPurchase.TestingLogInFunctionality">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:17 EST" name="setUp" finished-at="2022-12-12T12:59:23 EST" duration-ms="5924" status="PASS">
+    <test started-at="2022-12-12T13:31:32 EST" name="Default test" finished-at="2022-12-12T13:32:19 EST" duration-ms="46825">
+      <class name="com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:32 EST" name="setUp" finished-at="2022-12-12T13:31:38 EST" duration-ms="5962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validatingLoginFunctionality()[pri:1, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:23 EST" name="validatingLoginFunctionality" finished-at="2022-12-12T12:59:24 EST" duration-ms="784" status="PASS">
+        <test-method signature="validatingLoginFunctionality()[pri:1, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:38 EST" name="validatingLoginFunctionality" finished-at="2022-12-12T13:31:39 EST" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingLoginFunctionality -->
-        <test-method signature="validatingPhonesAndPdaPage()[pri:2, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:24 EST" name="validatingPhonesAndPdaPage" finished-at="2022-12-12T12:59:25 EST" duration-ms="920" status="PASS">
+        <test-method signature="validatingPhonesAndPdaPage()[pri:2, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:39 EST" name="validatingPhonesAndPdaPage" finished-at="2022-12-12T13:31:42 EST" duration-ms="2407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingPhonesAndPdaPage -->
-        <test-method signature="validatingHTCPage()[pri:3, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:25 EST" name="validatingHTCPage" finished-at="2022-12-12T12:59:26 EST" duration-ms="1226" status="PASS">
+        <test-method signature="validatingHTCPage()[pri:3, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:42 EST" name="validatingHTCPage" finished-at="2022-12-12T13:31:42 EST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingHTCPage -->
-        <test-method signature="validatingProductAddedToCart()[pri:4, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:26 EST" name="validatingProductAddedToCart" finished-at="2022-12-12T12:59:31 EST" duration-ms="5058" status="PASS">
+        <test-method signature="validatingProductAddedToCart()[pri:4, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:42 EST" name="validatingProductAddedToCart" finished-at="2022-12-12T13:31:47 EST" duration-ms="5054" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product Not Added to Cart expected [1 item(s) - $100.00] but found [2 item(s) - $244.00]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product Not Added to Cart expected [1 item(s) - $100.00] but found [2 item(s) - $244.00]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase.validatingProductAddedToCart(TestingHTCPhonePurchase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingProductAddedToCart -->
-        <test-method signature="validatingCheckoutPage()[pri:5, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:31 EST" name="validatingCheckoutPage" finished-at="2022-12-12T12:59:32 EST" duration-ms="434" status="PASS">
+        <test-method signature="validatingCheckoutPage()[pri:5, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:47 EST" name="validatingCheckoutPage" finished-at="2022-12-12T13:31:47 EST" duration-ms="450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingCheckoutPage -->
-        <test-method signature="validatingBillingDetails()[pri:6, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:32 EST" name="validatingBillingDetails" finished-at="2022-12-12T12:59:32 EST" duration-ms="425" status="PASS">
+        <test-method signature="validatingBillingDetails()[pri:6, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:47 EST" name="validatingBillingDetails" finished-at="2022-12-12T13:31:48 EST" duration-ms="971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingBillingDetails -->
-        <test-method signature="validatingDeliveryDetails()[pri:7, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:32 EST" name="validatingDeliveryDetails" finished-at="2022-12-12T12:59:33 EST" duration-ms="724" status="PASS">
+        <test-method signature="validatingDeliveryDetails()[pri:7, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:48 EST" name="validatingDeliveryDetails" finished-at="2022-12-12T13:31:49 EST" duration-ms="725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingDeliveryDetails -->
-        <test-method signature="validatingDeliveryMethod()[pri:8, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:33 EST" name="validatingDeliveryMethod" finished-at="2022-12-12T12:59:33 EST" duration-ms="774" status="PASS">
+        <test-method signature="validatingDeliveryMethod()[pri:8, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:49 EST" name="validatingDeliveryMethod" finished-at="2022-12-12T13:31:59 EST" duration-ms="10054" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[name='shipping_method']"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=input[name='shipping_method']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[name='shipping_method']"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=input[name='shipping_method']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase.validatingDeliveryMethod(TestingHTCPhonePurchase.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingDeliveryMethod -->
-        <test-method signature="validatingPaymentMethod()[pri:9, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:33 EST" name="validatingPaymentMethod" finished-at="2022-12-12T12:59:37 EST" duration-ms="3879" status="PASS">
+        <test-method signature="validatingPaymentMethod()[pri:9, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:31:59 EST" name="validatingPaymentMethod" finished-at="2022-12-12T13:32:09 EST" duration-ms="10043" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[name='payment_method']"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=input[name='payment_method']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[name='payment_method']"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=input[name='payment_method']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase.validatingPaymentMethod(TestingHTCPhonePurchase.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingPaymentMethod -->
-        <test-method signature="validatingConfirmOrder()[pri:10, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:37 EST" name="validatingConfirmOrder" finished-at="2022-12-12T12:59:40 EST" duration-ms="3076" status="PASS">
+        <test-method signature="validatingConfirmOrder()[pri:10, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:32:09 EST" name="validatingConfirmOrder" finished-at="2022-12-12T13:32:19 EST" duration-ms="10055" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"table[class='table table-bordered table-hover'] tbody td:first-of-type a"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=table[class='table table-bordered table-hover'] tbody td:first-of-type a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table[class='table table-bordered table-hover'] tbody td:first-of-type a"}
+  (Session info: MicrosoftEdge=108.0.1462.46)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NAV', ip: '10.0.0.69', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [43ee10bec4c336f5bfe770a5ffbc7b99, findElement {using=css selector, value=table[class='table table-bordered table-hover'] tbody td:first-of-type a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62687}, msedge: {msedgedriverVersion: 107.0.1418.62 (cd9348711d31..., userDataDir: C:\Users\navjo\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62687/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43ee10bec4c336f5bfe770a5ffbc7b99
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase.validatingConfirmOrder(TestingHTCPhonePurchase.java:121)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingConfirmOrder -->
-        <test-method signature="validatingOrderPlaced()[pri:11, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:40 EST" name="validatingOrderPlaced" finished-at="2022-12-12T12:59:40 EST" duration-ms="20" status="PASS">
+        <test-method signature="validatingOrderPlaced()[pri:11, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:32:19 EST" name="validatingOrderPlaced" finished-at="2022-12-12T13:32:19 EST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Order Placement failed expected [Your order has been placed!] but found [Checkout]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Order Placement failed expected [Your order has been placed!] but found [Checkout]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase.validatingOrderPlaced(TestingHTCPhonePurchase.java:135)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingOrderPlaced -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingLogInFunctionality@52af26ee]" started-at="2022-12-12T12:59:40 EST" name="tearDown" finished-at="2022-12-12T12:59:41 EST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase@52af26ee]" started-at="2022-12-12T13:32:19 EST" name="tearDown" finished-at="2022-12-12T13:32:19 EST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.NavjotSingh.TestingPurchase.TestingLogInFunctionality -->
+      </class> <!-- com.NavjotSingh.TestingPurchase.TestingHTCPhonePurchase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

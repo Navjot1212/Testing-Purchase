@@ -12,7 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestingLogInFunctionality {
+public class TestingHTCPhonePurchase {
 	WebDriver driver;
 
 	@BeforeTest
@@ -29,7 +29,7 @@ public class TestingLogInFunctionality {
 		WebElement email = driver.findElement(By.cssSelector("form div[class='form-group']:first-of-type input"));
 		WebElement password = driver.findElement(By.cssSelector("form div[class='form-group']:last-of-type input"));
 		WebElement loginBtn = driver.findElement(By.cssSelector("input[type='submit']"));
-		email.sendKeys("Navjot.rehal12@gmail.com");
+		email.sendKeys("Navjot78@gmail.com");
 		password.sendKeys("Navjot13");
 		loginBtn.click();
 		String titleOfPage = driver.getTitle();
@@ -40,12 +40,13 @@ public class TestingLogInFunctionality {
 	public void validatingPhonesAndPdaPage() {
 		driver.findElement(By.cssSelector("ul[class='nav navbar-nav']>li:nth-of-type(6) a")).click();
 		Assert.assertEquals(driver.getTitle(), "Phones & PDAs", "Phones & PDAs page loading failed");
+		driver.findElement(
+				By.cssSelector("div[id='product-category']>div>div>div:nth-of-type(2)>div:first-of-type h4 a")).click();
+
 	}
 
 	@Test(priority = 3)
 	public void validatingHTCPage() {
-		// add better css selector
-		driver.findElement(By.cssSelector("div[class='product-thumb'] h4 a")).click();
 		Assert.assertEquals(driver.getTitle(), "HTC Touch HD", "HTC Touch HD page loading failed");
 	}
 
@@ -66,14 +67,14 @@ public class TestingLogInFunctionality {
 
 	@Test(priority = 6)
 	public void validatingBillingDetails() {
-//		driver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("Navjot");
-//		driver.findElement(By.cssSelector("input[name='lastname']")).sendKeys("Singh");
-//		driver.findElement(By.cssSelector("input[name='address_1']")).sendKeys("621 Beam Court");
-//		driver.findElement(By.cssSelector("input[name='city']")).sendKeys("Milton");
-//		driver.findElement(By.cssSelector("input[name='postcode']")).sendKeys("L9E1L3");
-//		selectElementByValue(driver.findElement(By.cssSelector("select[name='country_id']")), "38");
-//		selectElementByValue(driver.findElement(By.cssSelector("select[name='zone_id']")), "609");
-//		driver.findElement(By.cssSelector("input[value='Continue']")).click();
+		driver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("Navjot");
+		driver.findElement(By.cssSelector("input[name='lastname']")).sendKeys("Singh");
+		driver.findElement(By.cssSelector("input[name='address_1']")).sendKeys("621 Beam Court");
+		driver.findElement(By.cssSelector("input[name='city']")).sendKeys("Milton");
+		driver.findElement(By.cssSelector("input[name='postcode']")).sendKeys("L9E1L3");
+		selectElementByValue(driver.findElement(By.cssSelector("select[name='country_id']")), "38");
+		selectElementByValue(driver.findElement(By.cssSelector("select[name='zone_id']")), "609");
+		driver.findElement(By.cssSelector("input[value='Continue']")).click();
 		driver.findElement(By.cssSelector("input[id='button-payment-address']")).click();
 
 	}
@@ -117,7 +118,8 @@ public class TestingLogInFunctionality {
 	@Test(priority = 10)
 	public void validatingConfirmOrder() throws InterruptedException {
 		String productName = driver
-				.findElement(By.cssSelector("table[class='table table-bordered table-hover'] tbody td:first-of-type a")).getText();
+				.findElement(By.cssSelector("table[class='table table-bordered table-hover'] tbody td:first-of-type a"))
+				.getText();
 		String quantity = driver
 				.findElement(By.cssSelector("table[class='table table-bordered table-hover'] tbody td:nth-of-type(3)"))
 				.getText();

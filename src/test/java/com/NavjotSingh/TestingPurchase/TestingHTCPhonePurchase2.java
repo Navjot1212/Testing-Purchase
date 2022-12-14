@@ -24,8 +24,8 @@ public class TestingHTCPhonePurchase2 {
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 	}
 
-	@Test(priority = 1)
-	public void validatingPurchase() {
+	@Test
+	public void validatingPurchase() throws InterruptedException {
 		WebElement email = driver.findElement(By.cssSelector("form div[class='form-group']:first-of-type input"));
 		WebElement password = driver.findElement(By.cssSelector("form div[class='form-group']:last-of-type input"));
 		WebElement loginBtn = driver.findElement(By.cssSelector("input[type='submit']"));
@@ -86,7 +86,7 @@ public class TestingHTCPhonePurchase2 {
 
 	@AfterMethod
 	public void tearDown() {
-//		driver.close();
+		driver.close();
 	}
 
 	public void selectElementByValue(WebElement element, String value) {

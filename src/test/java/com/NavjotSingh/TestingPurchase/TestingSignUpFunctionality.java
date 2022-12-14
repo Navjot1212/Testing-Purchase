@@ -38,7 +38,7 @@ public class TestingSignUpFunctionality {
 		// Sending Data
 		firstName.sendKeys("Navjot");
 		lastName.sendKeys("Singh");
-		email.sendKeys("Navjot78@gmail.com");
+		email.sendKeys("Navjot678@gmail.com");
 		telephone.sendKeys("4372174447");
 		password.sendKeys("Navjot13");
 		passwordConfirm.sendKeys("Navjot13");

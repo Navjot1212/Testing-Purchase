@@ -1,7 +1,6 @@
 package com.NavjotSingh.TestingPurchase;
 
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +17,7 @@ public class TestingSignUpFunctionality {
 	public void setUp() {
 		System.setProperty("webdriver.edge.driver", "C:\\Drivers\\edgedriver_win64\\msedgedriver.exe");
 		driver = new EdgeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
 	}
@@ -38,7 +37,7 @@ public class TestingSignUpFunctionality {
 		// Sending Data
 		firstName.sendKeys("Navjot");
 		lastName.sendKeys("Singh");
-		email.sendKeys("Navjot678@gmail.com");
+		email.sendKeys("Navjot348@gmail.com");
 		telephone.sendKeys("4372174447");
 		password.sendKeys("Navjot13");
 		passwordConfirm.sendKeys("Navjot13");
